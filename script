@@ -3,7 +3,7 @@
 wget https://bitbucket.org/cryptogone/arionum-gpu-miner/downloads/arionum-gpu-miner-v1.6.0-alpha-ubuntu16-cuda9.0.tar.gz
 tar -xvzf arionum-gpu-miner-v1.6.0-alpha-ubuntu16-cuda9.0.tar.gz
 rm run_OpenCL.sh
-cat .vast_containerlabel >> /etc/environment | echo -n "NAME=" >> /etc/environment
+cat /root/.vast_containerlabel >> /etc/environment | echo -n "NAME=" >> /etc/environment
 touch run_OpenCL.sh
 echo '#! /bin/bash
 # please change pool address, wallet address and worker ID to yours
