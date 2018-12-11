@@ -3,11 +3,12 @@
 wget https://bitbucket.org/cryptogone/arionum-gpu-miner/downloads/arionum-gpu-miner-v1.6.0-alpha-ubuntu16-cuda9.0.tar.gz
 tar -xvzf arionum-gpu-miner-v1.6.0-alpha-ubuntu16-cuda9.0.tar.gz
 rm run_OpenCL.sh
+export NAME='~/.vast_containerlabel'
 touch run_OpenCL.sh
 echo '#! /bin/bash
 # please change pool address, wallet address and worker ID to yours
 # adjust -b & -t value as described in the README and FAQ
-worker="docker"
+worker=$NAME
 pool="http://mine.arionumpool.com"
 wallet="cis8i4z2HM7TRbw2jDnue4rh9Y8VDwBoMK2aDVPbcCiSwVYb9pEyoYNWxfJSraisASkkdb9MNfy6oRKS9BcHCWN"
 threads="2"
