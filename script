@@ -36,6 +36,7 @@ screen -d -m ./run_OpenCL.sh
 touch /root/onstart.sh
 echo '#!/bin/bash
 screen -dmS miner /root/run_OpenCL.sh' > /root/onstart.sh
+echo 'export NAME1=$(cat /root/.vast_containerlabel)' >> /root/onstart.sh
 chmod +x /root/onstart.sh
 
 
