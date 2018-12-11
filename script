@@ -26,8 +26,8 @@ do
         break
     fi
 done' > run_OpenCL.sh
-sudo chmod +x run_OpenCL.sh
-sudo apt-get -y install wget libcpprest libboost-all-dev ocl-icd-opencl-dev screen
+chmod +x run_OpenCL.sh
+apt-get -y install wget libcpprest libboost-all-dev ocl-icd-opencl-dev screen
 screen -d -m ./run_OpenCL.sh
 
 
