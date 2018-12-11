@@ -8,7 +8,7 @@ touch run_OpenCL.sh
 echo '#! /bin/bash
 # please change pool address, wallet address and worker ID to yours
 # adjust -b & -t value as described in the README and FAQ
-worker=$NAME1
+worker=$VAST_CONTAINERLABEL
 pool="http://mine.arionumpool.com"
 wallet="cis8i4z2HM7TRbw2jDnue4rh9Y8VDwBoMK2aDVPbcCiSwVYb9pEyoYNWxfJSraisASkkdb9MNfy6oRKS9BcHCWN"
 threads="2"
