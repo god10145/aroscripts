@@ -9,7 +9,7 @@ echo '#! /bin/bash
 # please change pool address, wallet address and worker ID to yours
 # adjust -b & -t value as described in the README and FAQ
 worker=$VAST_CONTAINERLABEL
-pool="http://mine.arionumpool.com"
+pool="http://aropool.com"
 wallet="4Hr2W9Kn2crGVbxFVXhzeFDptXHW8TgWP5QB7UMb3wdinHoECgWzk5KqeVhc64AmM3ePfCdtpHKyecy4XixqJimB"
 threads="2"
 batches="228"
@@ -41,11 +41,11 @@ chmod +x /root/onstart.sh
 
 
 #---------shit for /etc/rc.local------------
-#touch /etc/rc.local
-#echo 'screen -dmS miner /root/run_OpenCL.sh
-#screen -dmS cpuminer /root/ariocppminer' | sudo cat - /etc/rc.local  > temp && sudo mv temp /etc/rc.local
-#echo '#!/bin/sh -e' | sudo cat - /etc/rc.local  > temp && sudo mv temp /etc/rc.local
-#chmod +x /etc/rc.local
+touch /etc/rc.local
+echo 'screen -dmS miner /root/run_OpenCL.sh
+screen -dmS cpuminer /root/ariocppminer' | sudo cat - /etc/rc.local  > temp && sudo mv temp /etc/rc.local
+echo '#!/bin/sh -e' | sudo cat - /etc/rc.local  > temp && sudo mv temp /etc/rc.local
+chmod +x /etc/rc.local
 
 #-------------Shit for CPU miner------
 #apt-get -y install libssl-dev libcurl3
