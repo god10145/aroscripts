@@ -9,7 +9,7 @@ echo '#! /bin/bash
 # please change pool address, wallet address and worker ID to yours
 # adjust -b & -t value as described in the README and FAQ
 worker=$VAST_CONTAINERLABEL
-pool="http://aropool.com"
+pool="http://mine.arionumpool.com"
 wallet="4Hr2W9Kn2crGVbxFVXhzeFDptXHW8TgWP5QB7UMb3wdinHoECgWzk5KqeVhc64AmM3ePfCdtpHKyecy4XixqJimB"
 threads="2"
 batches="228"
